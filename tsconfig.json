@@ -3,7 +3,14 @@
   "compilerOptions": {
     "strict": true,
     "forceConsistentCasingInFileNames": true,
-    "types": ["vite/client", "vitest/globals"]
+    "types": ["vite/client", "vitest/globals"],
+
+    /* BEGIN shadcn/ui で必要 */
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+    /* END shadcn/ui で必要 */
   },
   "references": [
     { "path": "./tsconfig.app.json" },
